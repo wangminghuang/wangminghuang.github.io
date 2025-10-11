@@ -9,7 +9,7 @@
     "buildTwo": "tsc -b && vite build",
     "build": "tsc -b && vite build --outDir docs",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --outDir docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -b main",
     "format": "prettier --write .",
