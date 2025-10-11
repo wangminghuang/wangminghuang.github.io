@@ -1,4 +1,4 @@
-import{d as o,j as r,p as i}from"./index-B0sc3Zxi.js";const s=o.div`
+import{d as o,j as r,p as i}from"./index-BJzdn5lx.js";const s=o.div`
   padding: 0 0;
 `;o.h1`
   font-size: 2.5rem;

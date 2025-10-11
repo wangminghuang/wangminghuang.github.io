@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { articles } from '@/store/articlesData.ts'
+import { Link } from 'react-router-dom'
 
 const Articles = () => {
   return (
@@ -13,7 +14,7 @@ const Articles = () => {
               <ArticleDate>{article.date}</ArticleDate>
             </MetadataContainer>
             <ArticleExcerpt>{article.excerpt}</ArticleExcerpt>
-            <ReadMoreLink href={`/articles/${article.id}`}>阅读全文 →</ReadMoreLink>
+            <ReadMoreLink to={`/articles/${article.id}`}>阅读全文 →</ReadMoreLink>
           </ArticleCard>
         ))}
       </ArticlesGrid>
@@ -93,12 +94,14 @@ const ArticleExcerpt = styled.p`
   opacity: 0.9;
 `
 
-const ReadMoreLink = styled.a`
+// 将 ReadMoreLink 从 styled.a 改为使用 Link
+const ReadMoreLink = styled(Link)`
   display: inline-block;
   color: ${(props) => props.theme.accentColor};
   text-decoration: none;
   font-weight: 500;
   transition: transform 0.2s ease;
+  position: relative; /* 添加这行，因为使用了绝对定位的伪元素 */
   &:after {
     content: '';
     position: absolute;
