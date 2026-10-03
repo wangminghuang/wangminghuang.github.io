@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Love-wmh.github.io/",
+  "homepage": "https://wangminghuang.github.io/",
   "scripts": {
     "dev": "vite --host",
     "buildTwo": "tsc -b && vite build",

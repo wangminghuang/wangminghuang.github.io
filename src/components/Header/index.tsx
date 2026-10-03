@@ -32,7 +32,7 @@ export const Header = () => {
           {/*  <StyledNavLink to="/about">关于</StyledNavLink>*/}
           {/*</li>*/}
           <li>
-            <StyledNavLink to="https://github.com/Love-wmh">GitHub</StyledNavLink>
+            <StyledNavLink to="https://github.com/wangminghuang">GitHub</StyledNavLink>
           </li>
           <li></li>
         </ul>
